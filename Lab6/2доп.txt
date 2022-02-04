@@ -1,0 +1,34 @@
+\documentclass[tikz, margin=3mm]{standalone}
+\usetikzlibrary{arrows.meta, automata, positioning, quotes}
+
+\begin{document}
+
+\begin{tikzpicture}[
+    shorten >=2pt,
+    node distance=2cm and 2cm, 
+    bend angle=20,
+    auto            ]
+    \node[state,initial,accepting] (circle1)   {$1$};
+    \node[state,accepting] (circle2) [right=of circle1] {$2$};
+    \node[state,accepting] (circle3) [right=of circle2] {$3$};
+    \node[state,accepting] (circle4) [below=of circle1] {$4$};
+    \node[state,accepting] (circle5) [right=of circle4] {$5$};
+    \node[state,accepting] (circle6) [right=of circle5] {$6$};
+    
+\path[->]
+    (circle1) edge  [loop above] node {$Z_1$} ()
+    edge  node [swap] {$Z_3$} (circle2)
+    edge  node [swap] {$Z_2$} (circle5)
+    (circle2) edge  [loop above] node {$Z_2$} ()
+    edge  node [swap] {$Z_1$} (circle6)
+    (circle3) edge  node [swap] {$Z_2$} (circle2)
+    edge  node [swap] {$Z_1$} (circle6)
+    (circle4) edge  [loop above] node {$Z_3$} ()
+    edge  node [swap] {$Z_1$} (circle1)
+    (circle5) edge  node [swap] {$Z_3$} (circle3)
+    edge  node [swap] {$Z_2$} (circle4)
+    (circle6) edge  node [swap] {$Z_3$} (circle3)
+    edge  node [swap] {$Z_2$} (circle4)
+\end{tikzpicture}
+
+\end{document}

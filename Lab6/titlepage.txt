@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage[14pt]{extsizes}
+\usepackage[russian]{babel}
+\usepackage[left=20mm, top=15mm, right=15mm, bottom=15mm]{geometry}
+\begin{document} 
+\begin{center}
+\hfill \break
+\large{Университет ИТМО}\\
+\footnotesize{Факультет программной инженерии и компьютерной техники}\\ 
+\hfill \break
+\hfill\break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\large{Лабораторная работа №5\\по информатике\\«Работа с электронными таблицами»\\Вариант №22}\\
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\end{center}
+\hfill \break
+\normalsize{ 
+\begin{flushright}
+Выполнил:
+\par
+Степанов Артур Петрович
+\par
+Приняла:
+\par
+Рудникова Тамара Владимировна
+\end{flushright}
+}\\
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\hfill \break
+\begin{center} г. Санкт-Петербург 
+\par
+2021 г. 
+\end{center}
+\thispagestyle{empty}
+\end{document}

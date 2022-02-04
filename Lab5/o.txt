@@ -1,0 +1,9 @@
+Sub satret()
+For Each cell In Selection
+If cell.Value Like "1" Then
+    cell.Interior.ColorIndex = 3
+ElseIf cell.Value Like "0" Then
+    cell.Font.Italic = True
+End If
+Next
+End Sub

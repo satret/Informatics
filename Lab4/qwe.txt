@@ -1,0 +1,24 @@
+<place audience="3408" building="ул.Ломоносова, д.9, лит. Е"/>
+
+
+file = open('xml.txt', 'r', encoding="utf-8")
+xml = file.read()
+a=[]
+i=0
+while xml[i]!='\n':
+    b=xml[i]
+    a[0]=a[0]+'1'
+    i=i+1
+print(a)
+
+
+
+# получим объект файла
+a=["</lesson>",
+"</day>",
+"</schedule>"]
+b=a[1]+"pp"
+print(a)
+print(b)
+a[1]=b
+print(a)
